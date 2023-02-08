@@ -37,3 +37,6 @@ cargo install trunk
 ```
 
 ## Examples
+In didactical order:
+1. [A minimal client side app, demoing imports and exports](minimal-client-side/)
+2. [An even smaller app, for analysing the `.wat` file](minimal-base-types/)
