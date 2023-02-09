@@ -44,3 +44,4 @@ In didactical order:
 4. [Complex types, using shared memory](client-side-complex-types/)
 5. [Using `web-sys` to manipulate the DOM](client-side-web-sys/)
 6. [Building a basic server-side runtime with `wasmtime`](server-side-basic/)
+7. [A simple plugin based HTTP handler with `wasmtime` and `axum`](server-side-http-handler/)

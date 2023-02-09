@@ -6,7 +6,7 @@ fn main() -> Result<()> {
     let engine = Engine::default();
 
     // let us now load and compile our WebAssembly module
-    let module = Module::from_file(&engine, "../client-side-bind-js/pkg/client_side_bind_js_bg.wasm")?;
+    let module = Module::from_file(&engine, "../client-side-bind-js/target/wasm32-unknown-unknown/release/client_side_bind_js.wasm")?;
     
     // stores are based on an engine and represent runtime contexts with individual states
     // this store has state (), i.e., no state at all
