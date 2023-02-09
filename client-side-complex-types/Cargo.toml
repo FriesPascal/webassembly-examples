@@ -1,5 +1,5 @@
 [package]
-name = "minimal-base-types"
+name = "client-side-complex-types"
 version = "0.1.0"
 edition = "2021"
 

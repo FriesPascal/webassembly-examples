@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const imports = {};
+      WebAssembly.instantiateStreaming(fetch("target/wasm32-unknown-unknown/release/client_side_basic.wasm"), imports).then(
+        (wasm) => {
+          const add = wasm.instance.exports.add;
+      
+          console.log("40 + 2 = " + add(40,2));
+        }
+      );
+    </script>
+  </body>
+</html>

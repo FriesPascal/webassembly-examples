@@ -38,5 +38,7 @@ cargo install trunk
 
 ## Examples
 In didactical order:
-1. [A minimal client side app, demoing imports and exports](minimal-client-side/)
-2. [An even smaller app, for analysing the `.wat` file](minimal-base-types/)
+1. [Minimal bindings with only WASM native types](client-side-basic/)
+2. [Calling JS functions fro WebAssemby](client-side-bind-js/)
+3. [Using `wasm-pack` / `wasm-bindgen` for generating the JS glue code](client-side-wasm-pack/)
+4. [Complex types, using shared memory](client-side-complex-types/)
