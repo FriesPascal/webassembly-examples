@@ -43,3 +43,4 @@ In didactical order:
 3. [Using `wasm-pack` / `wasm-bindgen` for generating the JS glue code](client-side-wasm-pack/)
 4. [Complex types, using shared memory](client-side-complex-types/)
 5. [Using `web-sys` to manipulate the DOM](client-side-web-sys/)
+6. [Building a basic server-side runtime with `wasmtime`](server-side-basic/)
