@@ -6,7 +6,7 @@ fn run() -> Result<(), JsValue> {
     let document = window()
         .expect("There should be a window.")
         .document()
-        .expect("A document shoudl exist.");
+        .expect("A document should exist.");
     let body = document.body().expect("The document should have a body");
 
     let paragraph = document.create_element("p")?;

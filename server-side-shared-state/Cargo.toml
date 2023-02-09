@@ -1,12 +1,11 @@
 [package]
-name = "server-side-http-handler"
+name = "server-side-shared-state"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anyhow = "1.0.69"
 axum = "0.6.4"
 rand = "0.8.5"
 tokio = { version = "1.25.0", features = ["full"] }
