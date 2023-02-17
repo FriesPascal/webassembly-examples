@@ -9,4 +9,4 @@ edition = "2021"
 anyhow = "1.0.69"
 axum = "0.6.4"
 tokio = { version = "1.25.0", features = ["full"] }
-wasmtime = { git = "https://github.com/bytecodealliance/wasmtime", features = ["component-model"] }
+wasmtime = { git = "https://github.com/bytecodealliance/wasmtime", rev = "c8fa1b845feb9c6c898093eb071e4df848a5ed69", features = ["component-model"] }

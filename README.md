@@ -52,4 +52,4 @@ All are in didactical order.
 3. [A HTTP handler with persistent global state](server-side-shared-state/)
 
 ### Component model / WASI
-1. [A HTTP handler implemented via the compomponent model](component-model/)
+1. [A HTTP handler implemented via the component model](component-model-basic/)
