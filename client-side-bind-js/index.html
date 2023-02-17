@@ -4,11 +4,17 @@
   </head>
   <body>
     <script type="text/javascript">
+      // this `imports` object will later be imported into the WASM instance
       const imports = {
-        env : { alert: i => alert("Sum is: " + i) }
+        // every key in the `imports` object corresponds to a WASM import module / namespace
+        // values are objects themselves, containing function bindings
+        sys : {
+          // in the module / namespace "sys", we bind the name "alert" to an inline closure
+          alert: i => alert("Sum is: " + i)
+        }
       };
       
-      WebAssembly.instantiateStreaming(fetch("target/wasm32-unknown-unknown/release/client_side_bind_js.wasm"), imports).then(
+      WebAssembly.instantiateStreaming(fetch("target/wasm32-unknown-unknown/release/client_side_wasm_bindgen.wasm"), imports).then(
         (wasm) => {
           const alert_sum = wasm.instance.exports.alert_sum;
           alert_sum(40,2);

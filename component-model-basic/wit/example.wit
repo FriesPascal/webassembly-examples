@@ -1,0 +1,15 @@
+interface greeter {
+  greet: func(param: string) -> string
+}
+
+interface host {
+  log: func(param: string)
+}
+
+// a world is a collection of interfaces that a component can import / export
+default world example {
+  // a component in the "example" world can use the "host" interface
+  import host: self.host
+  // a component in the "example" world provides the "greeter" interface
+  export greeter: self.greeter
+}

@@ -1,3 +1,4 @@
+#[link(wasm_import_module = "sys")]
 extern {
     fn alert(i: i32);
 }

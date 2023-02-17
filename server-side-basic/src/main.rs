@@ -18,7 +18,7 @@ fn main() -> Result<()> {
     let mut linker = Linker::new(&engine);
 
     // the linker takes care of host-functions -- the equivalents of the JS importObject
-    linker.func_wrap("env", "alert", |x: i32| println!("{x}"))?;
+    linker.func_wrap("sys", "alert", |x: i32| println!("{x}"))?;
 
     // we can now use the linker to instantiate the module in our store 
     let instance = linker.instantiate(&mut store, &module)?;

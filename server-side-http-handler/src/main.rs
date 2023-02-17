@@ -19,13 +19,15 @@ async fn main() {
 }
 
 async fn handler() -> Result<String, StatusCode> {
+    // generate 2 random integers
     let mut rng = rand::thread_rng();
-    let random_number: i32 = rng.gen();
-    
-    match add(random_number, 1) {
+    let a: i32 = rng.gen();
+    let b: i32 = rng.gen();
+
+    // use wasm to add the numbers
+    match add(a, b) {
         Ok(sum) => {
-            let response = format!("Random number was: {}, Add 1 makes: {}", random_number, sum);
-            Ok(response)
+            Ok(format!("{a} + {b} = {sum}"))
         },
         Err(e) => {
             eprintln!("Error during function call: {e}");
