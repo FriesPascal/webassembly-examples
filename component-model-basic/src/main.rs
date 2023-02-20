@@ -79,7 +79,7 @@ async fn greet_bindgen(Path(name): Path<String>) -> String {
 
 fn greet_bindgen_inner(name: &str) -> Result<String> {
     // Generate bindings for ./wit/example.wit
-    bindgen!({path: "./wit", world: "example"});
+    bindgen!({path: "wit/example.wit"});
 
     // Define a struct to implement the "host" interface for.
     // If this struct has fields, we can even use it to store state :D

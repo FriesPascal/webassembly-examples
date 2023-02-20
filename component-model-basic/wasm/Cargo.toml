@@ -11,4 +11,4 @@ lto = true
 opt-level = 'z'
 
 [dependencies]
-wit-bindgen = "0.3.0"
+wit-bindgen = {git = "https://github.com/bytecodealliance/wit-bindgen.git", rev = "462527127f0d9de935f01e298a7e1c975e124a62"}

@@ -1,4 +1,4 @@
-wit_bindgen::generate!({path: "../wit", world: "example"});
+wit_bindgen::generate!({path: "../wit/example.wit"});
 
 struct ExampleGreeter {}
 
